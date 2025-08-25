@@ -8,6 +8,6 @@
     <h1 th:text="#{both.title}"></h1>
     <h2 th:text="#{both.sub}"></h2>
     <p th:text="'入力された値は「' + ${val} + '」です。'"></p>
-    <p><a th:href="@{/input(previous=${val})}">入力画面へ戻る</a></p>
+    <p><a th:href="@{/input(previous=${val})}" th:text="#{output.back}"></a></p>
 </body>
 </html>
